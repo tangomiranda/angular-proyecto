@@ -1,0 +1,41 @@
+<!-- Main -->
+<div class="container-fluid p-4">
+    <!-- Contenido -->
+    <div class="row">
+        <!-- Titulo -->
+        <div class="col-12">
+            <div class="text-start" *ngIf="moduloNav[moduloNav.length-1].tab">
+                <span class="badge bg-primary fw-500 fs-8 text-capitalize">{{ moduloNav[moduloNav.length-1].tab }}</span>
+            </div>
+            <h1 class="main-title">
+                <span class="align-middle">{{ moduloNav[moduloNav.length-1].large }}</span>
+                <button mat-icon-button color="primary" class="align-middle" matTooltip="Marcar favorito" matTooltipPosition="above" matTooltipClass="fs-8 bg-primary">
+                    <mat-icon>star</mat-icon>
+                </button>
+            </h1>
+        </div>
+        <!-- Titulo -->
+        <!-- Elementos -->
+        <div class="col-12 mt-2 main-content">
+            <!-- Superior -->
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <app-envases-cosecha-header-detalle moduloGetAccion="{{moduloGetAccion}}" moduloGetTab="{{moduloGetTab}}"></app-envases-cosecha-header-detalle>
+                </div>
+            </div>
+            <!-- Superior -->
+            <!-- Acciones -->
+            <div class="row">
+                <div class="col mt-4 text-start">
+                    <button mat-fab color="primary-lt" class="mat-elevation-z0" routerLink="/envases-cosecha">
+                        <mat-icon>arrow_back</mat-icon>
+                    </button>
+                </div>
+            </div>
+            <!-- Acciones -->
+        </div>
+        <!-- Elementos -->
+    </div>
+    <!-- Contenido -->
+</div>
+<!-- Main -->

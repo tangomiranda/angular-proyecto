@@ -1,0 +1,24 @@
+<!-- Main -->
+<div class="container-fluid p-4">
+    <!-- Contenido -->
+    <div class="row">
+        <!-- Elementos -->
+        <div class="col-12 mt-2 main-content">
+            <!-- Favoritos -->
+            <div class="row">
+                <div class="col-12 mt-4 text-center">
+                    <ng-container *ngFor="let item of moduloMenuItems">
+                    <button mat-flat-button color="primary" class="main-btn-icon me-2 mb-2 rounded-pill py-2 px-4" routerLink="{{item.enlace}}" [queryParams]="item.params">
+                        <mat-icon>{{item.icono}}</mat-icon>
+                        <span class="ms-2 align-sub">{{item.titulo}}</span>
+                    </button>
+                    </ng-container>
+                </div>
+            </div>
+            <!-- Favoritos -->
+        </div>
+        <!-- Elementos -->
+    </div>
+    <!-- Contenido -->
+</div>
+<!-- Main -->
